@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta
+      name="viewport"
+      charset="utf-8"
+      content="width=device-width, initial-scale=1"
+    />
+    <title>Home Page</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap"
+      rel="stylesheet"
+    />
+    <style type="text/css">
+      body {
+        margin: 0;
+        padding: 0;
+        color: #ecf6fe;
+        background: #ecf6fe;
+        text-align: center;
+        background-image: url(image/hmbg.jpg);
+        background-size: 4600px;
+        background-position-x: -225px;
+        background-position-y:-60px ;
+       
+      }
+      .header {
+        height: 150px;
+        background-color: #cccccc;
+        background: #000 url(image/possible\ bg\ 3.jpg);
+        height: 200px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+      }
+
+      #container {
+        width: 70vw;
+        margin: 30vw auto;
+      }
+      /* tulisan pertemuan 1&2 */
+      h1 {
+        font-family: "Silkscreen", cursive;
+        font-size: 65px;
+        z-index: 1;
+        letter-spacing: 8px;
+        margin: 0;
+        line-height: 0;
+        position: relative;
+        left: 2%;
+        top: 0;
+        color: white;
+        opacity: 1000%;
+      }
+      h1:nth-child(2) {
+        z-index: 1;
+        color: #67f3da;
+        animation: glitch2 2.5s infinite;
+      }
+
+      h1:nth-child(3) {
+        z-index: 1;
+        color: #f16f6f;
+        animation: glitch3 2.5s infinite;
+      }
+      /* keyframes untuk efek glitch */
+      @keyframes glitch2 {
+        0% {
+          transform: none;
+          opacity: 0.25;
+        }
+        7% {
+          transform: translate(-2px, -3px);
+          opacity: 0.5;
+        }
+        10% {
+          transform: none;
+          opacity: 0.25;
+        }
+        27% {
+          transform: none;
+          opacity: 0.25;
+        }
+        30% {
+          transform: translate(-5px, -2px);
+          opacity: 0.5;
+        }
+        35% {
+          transform: none;
+          opacity: 0.25;
+        }
+        52% {
+          transform: none;
+          opacity: 0.25;
+        }
+        55% {
+          transform: translate(-5px, -1px);
+          opacity: 0.5;
+        }
+        50% {
+          transform: none;
+          opacity: 0.25;
+        }
+        72% {
+          transform: none;
+          opacity: 0.25;
+        }
+        75% {
+          transform: translate(-2px, -6px);
+          opacity: 0.5;
+        }
+        80% {
+          transform: none;
+          opacity: 0.25;
+        }
+        100% {
+          transform: none;
+          opacity: 0.25;
+        }
+      }
+
+      @keyframes glitch3 {
+        0% {
+          transform: none;
+          opacity: 0.25;
+        }
+        7% {
+          transform: translate(2px, 3px);
+          opacity: 0.5;
+        }
+        10% {
+          transform: none;
+          opacity: 0.25;
+        }
+        27% {
+          transform: none;
+          opacity: 0.25;
+        }
+        30% {
+          transform: translate(5px, 2px);
+          opacity: 0.5;
+        }
+        35% {
+          transform: none;
+          opacity: 0.25;
+        }
+        52% {
+          transform: none;
+          opacity: 0.25;
+        }
+        55% {
+          transform: translate(5px, 1px);
+          opacity: 0.5;
+        }
+        50% {
+          transform: none;
+          opacity: 0.25;
+        }
+        72% {
+          transform: none;
+          opacity: 0.25;
+        }
+        75% {
+          transform: translate(2px, 6px);
+          opacity: 0.5;
+        }
+        80% {
+          transform: none;
+          opacity: 0.25;
+        }
+        100% {
+          transform: none;
+          opacity: 0.25;
+        }
+      }
+
+      /* tombol menu */
+      .menu-item,
+      .menu-open-button {
+        background: #eeeeee;
+        border-radius: 100%;
+        width: 80px;
+        height: 80px;
+        margin-left: -40px;
+        position: absolute;
+        color: #ffffff;
+        text-align: center;
+        line-height: 80px;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+        -webkit-transition: -webkit-transform ease-out 200ms;
+        transition: -webkit-transform ease-out 200ms;
+        transition: transform ease-out 200ms, -webkit-transform ease-out 200ms;
+      }
+
+      .menu-open {
+        display: none;
+      }
+      .Lines {
+        width: 25px;
+        height: 3px;
+        background: #596778;
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-left: -12.5px;
+        margin-top: -1.5px;
+        -webkit-transition: -webkit-transform 200ms;
+        transition: -webkit-transform 200ms;
+        transition: transform 200ms;
+        transition: transform 200ms, -webkit-transform 200ms;
+      }
+
+      .line-1 {
+        -webkit-transform: translate3d(0, -8px, 0);
+        transform: translate3d(0, -8px, 0);
+      }
+
+      .line-2 {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+      }
+
+      .line-3 {
+        -webkit-transform: translate3d(0, 8px, 0);
+        transform: translate3d(0, 8px, 0);
+      }
+
+      .menu-open:checked + .menu-open-button .line-1 {
+        -webkit-transform: translate3d(0, 0, 0), rotate(45deg);
+        transform: translate3d(0, 0, 0), rotate(45deg);
+      }
+
+      .menu-open:checked + .menu-open-button .line-2 {
+        -webkit-transform: translate3d(0, 0, 0), scale(0.1, 1);
+        transform: translate3d(0, 0, 0), scale(0.1, 1);
+      }
+
+      .menu-open:checked + .menu-open-button .line-3 {
+        -webkit-transform: translate3d(0, 0, 0), rotate(-45deg);
+        transform: translate3d(0, 0, 0), rotate(-45deg);
+      }
+
+      .menu {
+        margin: auto;
+        position: absolute;
+        top: 165px;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 80px;
+        height: 80px;
+        text-align: center;
+        box-sizing: border-box;
+        font-size: 50px;
+      }
+
+      .menu-item:hover {
+        background: #eeeeee;
+        color: #3290b1;
+      }
+      .menu-item:nth-child(3) {
+        -webkit-transition-duration: 180ms;
+        transition-duration: 180ms;
+      }
+
+      .menu-item:nth-child(4) {
+        -webkit-transition-duration: 180ms;
+        transition-duration: 180ms;
+      }
+      .menu-item:nth-child(5) {
+        -webkit-transition-duration: 180ms;
+        transition-duration: 180ms;
+      }
+      .menu-item:nth-child(6) {
+        -webkit-transition-duration: 180ms;
+        transition-duration: 180ms;
+      }
+
+      .menu-item:nth-child(7) {
+        -webkit-transition-duration: 180ms;
+        transition-duration: 180ms;
+      }
+
+      .menu-item:nth-child(8) {
+        -webkit-transition-duration: 180ms;
+        transition-duration: 180ms;
+      }
+
+      .menu-item:nth-child(9) {
+        -webkit-transition-duration: 180ms;
+        transition-duration: 180ms;
+      }
+      .menu-open-button {
+        z-index: 2;
+        -webkit-transition-timing-function: cubic-bezier(
+          0.175,
+          0.885,
+          0.32,
+          1.275
+        );
+        transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        -webkit-transition-duration: 400ms;
+        transition-duration: 400ms;
+        -webkit-transform: scale(1.1, 1.1) translate3d(0, 0, 0);
+        transform: scale(1.1, 1.1) translate3d(0, 0, 0);
+        cursor: pointer;
+        box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.14);
+      }
+      .menu-open-button:hover {
+        -webkit-transform: scale(1.2, 1.2) translate3d(0, 0, 0);
+        transform: scale(1.2, 1.2) translate3d(0, 0, 0);
+      }
+      .menu-open:checked + .menu-open-button {
+        -webkit-transition-timming-function: linear;
+
+        -webkit-transition-duration: 400ms;
+        transition-duration: 400ms;
+        -webkit-transform: scale(0.8, 0.8) translate3d(0, 0, 0);
+        transform: scale(0.8, 0.8) translate3d(0, 0, 0);
+      }
+
+      .menu-open:checked ~ .menu-item {
+        -webkit-transition-timing-function: cubic-bezier(0.935, 0, 0.34, 1.33);
+        transition-timing-function: cubic-bezier(0.935, 0, 0.34, 1.33);
+      }
+
+      .menu-open:checked ~ .menu-item:nth-child(3) {
+        -webkit-transition-duration: 180ms;
+        transition-duration: 180ms;
+        -webkit-transform: translate3d(0.08361px, -104.9997px, 0);
+        transform: translate3d(0.08361px, -104.9997px, 0);
+      }
+      .menu-open:checked ~ .menu-item:nth-child(4) {
+        -webkit-transition-duration: 280ms;
+        transition-duration: 280ms;
+        -webkit-transform: translate3d(90.9466px, -52.47586px, 0);
+        transform: translate3d(90.9466px, -52.47586px, 0);
+      }
+
+      .menu-open:checked ~ .menu-item:nth-child(5) {
+        -webkit-transition-duration: 380ms;
+        transition-duration: 380ms;
+        -webkit-transform: translate3d(90.9466px, 52.47586px, 0);
+        transform: translate3d(90.9466px, 52.47586px, 0);
+      }
+
+      .menu-open:checked ~ .menu-item:nth-child(6) {
+        -webkit-transition-duration: 480ms;
+        transition-duration: 480ms;
+
+        -webkit-transform: translate3d(0.08361px, 104.9997px, 0);
+        transform: translate3d(0.08361px, 104.9997px, 0);
+      }
+
+      .menu-open:checked ~ .menu-item:nth-child(7) {
+        -webkit-transition-duration: 580ms;
+        transition-duration: 580ms;
+
+        -webkit-transform: translate3d(-90.86291px, 52.62064px, 0);
+        transform: translate3d(-90.86291px, 52.62064px, 0);
+      }
+
+      .menu-open:checked ~ .menu-item:nth-child(8) {
+        -webkit-transition-duration: 680ms;
+        transition-duration: 680ms;
+
+        -webkit-transform: translate3d(-91.03006px, -52.33095px, 0);
+        transform: translate3d(-91.03006px, -52.33095px, 0);
+      }
+
+      .menu-open:checked ~ .menu-item:nth-child(9) {
+        -webkit-transition-duration: 780ms;
+        transition-duration: 780ms;
+
+        -webkit-transform: translate3d(-0.25084px, -104.9997px, 0);
+        transform: translate3d(-0.25084px, -104.9997px, 0);
+      }
+
+      .blue {
+        background-color: #669ae1;
+        box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.14);
+        text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.12);
+      }
+
+      .blue:hover {
+        color: #669ae1;
+        text-shadow: none;
+      }
+      .green {
+        background-color: #70cc72;
+        box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.14);
+        text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.12);
+      }
+
+      .green:hover {
+        color: #70cc72;
+        text-shadow: none;
+      }
+      .red {
+        background-color: #fe4365;
+        box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.14);
+        text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.12);
+      }
+      .red:hover {
+        color: #fe4365;
+        text-shadow: none;
+      }
+      .purple {
+        background-color: #c49cde;
+        box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.14);
+        text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.12);
+      }
+      .purple:hover {
+        color: #c49cde;
+        text-shadow: none;
+      }
+
+      .orange {
+        background-color: #fc913a;
+        box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.14);
+        text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.12);
+      }
+
+      .orange:hover {
+        color: #fc913a;
+        text-shadow: none;
+      }
+
+      .lightblue {
+        background-color: #62c2e4;
+        box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.14);
+        text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.12);
+      }
+
+      .lightblue:hover {
+        color: #62c2e4;
+        text-shadow: none;
+      }
+
+      /* For mobile phones: */
+      [class*="menu-"] {
+        width: 100%;
+      }
+      [class*="Lines-"] {
+        width: 100%;
+      }
+
+      @media only screen and (min-width: 600px) {
+        /* For tablets: */
+        .menu-open-button {
+          width: 60%;
+        }
+        .menu-open {
+          width: 60%;
+        }
+        .menu-item-blue {
+          width: 60%;
+        }
+        .menu-item-green {
+          width: 60%;
+        }
+        .menu-item-red {
+          width: 60%;
+        }
+        .menu-item-purple {
+          width: 60%;
+        }
+        .menu-item-orange {
+          width: 60%;
+        }
+        .menu-item-lightblue {
+          width: 60%;
+        }
+      }
+      @media only screen and (min-width: 768px) {
+        /* For desktop: */
+        .menu-open-button {
+          width: 100%;
+        }
+        .menu-open {
+          width: 100%;
+        }
+        .menu-item-blue {
+          width: 100%;
+        }
+        .menu-item-green {
+          width: 100%;
+        }
+        .menu-item-red {
+          width: 100%;
+        }
+        .menu-item-purple {
+          width: 100%;
+        }
+        .menu-item-orange {
+          width: 100%;
+        }
+        .menu-item-lightblue {
+          width: 100%;
+        }
+      }
+      .kotakkiri {  
+        position: absolute;
+        font-size: 28px;
+        font-family:"Silkscreen", cursive;
+        top: 350px;
+        left: 40px;
+        color: white;
+        text-align: left;
+      }
+
+      .kotakkanan {  
+        position: absolute;
+        font-size: 28px;
+        font-family:"Silkscreen", cursive;
+        top: 350px;
+        right: 40px;
+        color: white;
+        text-align: right;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="header">
+      <!-- title pertemuan  -->
+      <div id="#container">
+        <h1>Coding Education</h1>
+        <h1>Coding Education</h1>
+        <h1>Coding education</h1>
+      </div>
+    </div>
+
+    <nav class="menu" title="Menu">
+      <input
+        type="checkbox"
+        name="menu-open"
+        href="#"
+        class="menu-open"
+        id="menu-open"
+      />
+
+      <label class="menu-open-button" for="menu-open">
+        <span class="Lines line-1"></span>
+        <span class="Lines line-2"></span>
+        <span class="Lines line-3"></span>
+      </label>
+
+      <a href="Meeting1&2.html" class="menu-item blue" title="Bagian 1"
+        ><i class="material-icons" style="font-size: 36px">filter_1</i></a
+      >
+      <a href="meeting3.html" class="menu-item green" title="Bagian 2"
+        ><i class="material-icons" style="font-size: 36px">filter_2</i></a
+      >
+      <a href="meeting4.html" class="menu-item red" title="Bagian 3"
+        ><i class="material-icons" style="font-size: 36px">filter_3</i></a
+      >
+      <a href="meeting5.html" class="menu-item purple" title="Bagian 4"
+        ><i class="material-icons" style="font-size: 36px">filter_4</i></a
+      >
+      <a href="meeting7.html" class="menu-item orange" title="Bagian 5"
+        ><i class="material-icons" style="font-size: 36px">filter_5</i></a
+      >
+      <a
+        href="Reference & AboutUs.html"
+        class="menu-item lightblue"
+        title="Bagian 6"
+        ><i class="material-icons" style="font-size: 36px">group</i></a
+      >
+    </nav>
+      <table class="kotakkiri">
+        <tr>
+          <td>
+            <i class="material-icons" style="font-size: 36px">filter_1</i>
+          </td>
+          <td>:</td>
+          <td>Pengenalan HTML</td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td>
+            <i class="material-icons" style="font-size: 36px">filter_2</i>
+          </td>
+          <td>:</td>
+          <td>HTML Lanjut</td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td>
+            <i class="material-icons" style="font-size: 36px">filter_3</i>
+          </td>
+          <td>:</td>
+          <td>List & Table</td>
+        </tr>
+      </table>
+
+      <table class="kotakkanan">
+        <tr>
+          <td>
+          Form & PHP Dasar
+          </td>
+          <td>:</td>
+          <td> <i class="material-icons" style="font-size: 36px">filter_4</i></td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td>
+            CSS Dasar
+          </td>
+          <td>:</td>
+          <td><i class="material-icons" style="font-size: 36px">filter_5</i></td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td>
+            Reference & AboutUs
+          </td>
+          <td>:</td>
+          <td><i class="material-icons" style="font-size: 36px">group</i></td>
+        </tr>
+      </table>
+  </body>
+</html>
