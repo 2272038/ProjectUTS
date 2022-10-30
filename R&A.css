@@ -276,8 +276,8 @@ nav {
   
   .img-container2 img {
       transform: skew(0deg, -2deg);
-      height: 275px;
-      width: 200px;
+      height: 100%;
+      width: 100%;
       margin: -35px 0px 0px -0px;
   }
   
