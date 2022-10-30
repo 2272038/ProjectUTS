@@ -1,7 +1,7 @@
 /* Body */
 body {
   margin: 0;
-  background-color: #fff;
+  background-color: #fff; 
 }
 /* headeer */
 .header {
@@ -215,38 +215,38 @@ nav {
   max-width: 150px;
   height: auto;
 }
-
+/* kotak abu */
   .kotak1{
     position: absolute;
     border-radius: 5%;
     width: 1300PX;
-    height: 1500px;
+    height: 2500px;
     background-color: darkgrey;
     left: 100px;
     font-family: "Silkscreen", cursive;
     font-size: 20px;
     text-align: center;
   }
-
+/* HTML */
 .judul1{
   font-family: "Silkscreen", cursive;
   text-align: center;
 
 }
-
+/* penjelasan HTML */
 .teks1{
   text-align: center;
   font-size: 19px;
   text-indent: 2%;
 }
-
+/* simple document HTML */
 .judul2{
    text-align: left;
    position: relative;
    left: 55px;
 }
 
-/* flip box 1  */
+/* flip box-1  */
 .front-G1 {
   position: absolute;
   top: 0px;
@@ -296,13 +296,13 @@ nav {
 .flip-box-back1 {
   transform: rotateY(180deg);
 }
-
+/* judul penjelasan */
 .judul3{
   position: relative;
   top: -60px;
   left: 170px;
 }
-
+/* text penjelasan dasar */
 .penjelasan-dasar{
   width: 700px;
   text-align: left;
@@ -311,19 +311,220 @@ nav {
   top: -70px;
   left: 520px;
 }
+/* list */
 ul.PD{
   font-size: 19px; 
 }
-
+/* hr ke2 */
 .pembatas1{
   position: relative;
   top: -50px;
 }
 
+/* judul heading */
+.judul4{
+  position: relative;
+  text-align: left;
+  left: 180px;
+
+}
 
 
+/* flip box-2  */
+.front-G2 {
+  position: absolute;
+  top: 0px;
+  height: 320px;
+  width: 320px;
+  left: 40px;
+}
+.back-G2 {
+  position: absolute;
+  top: 0px;
+  height: 320px;
+  width: 320px;
+  left: 40px;
+}
+.flip-box2{
+  position: relative;
+  top: 0;
+  left: 50px;
+  width: 300px;
+  height: 200px;
+  perspective: 1000px;
+}
 
+.flip-box-inner2 {
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
 
+.flip-box2:hover .flip-box-inner2 {
+  transform: rotateY(180deg);
+}
+
+.flip-box-front2,
+.flip-box-back2 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-box-front2 {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-box-back2 {
+  transform: rotateY(180deg);
+}
+/* judul paragraph */
+.judul5{
+  position: absolute;
+  top: 695px;
+  left: 550px;
+}
+
+/* flip box-3  */
+.front-G3 {
+  position: absolute;
+  top: 0px;
+  height: 320px;
+  width: 320px;
+  left: 40px;
+}
+.back-G3 {
+  position: absolute;
+  top: 0px;
+  height: 320px;
+  width: 320px;
+  left: 40px;
+}
+.flip-box3{
+  position: relative;
+  top: -8%;
+  left: 450px;
+  width: 300px;
+  height: 200px;
+  perspective: 1000px;
+}
+
+.flip-box-inner3 {
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-box3:hover .flip-box-inner3 {
+  transform: rotateY(180deg);
+}
+
+.flip-box-front3,
+.flip-box-back3 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-box-front3 {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-box-back3 {
+  transform: rotateY(180deg);
+}
+
+/* judul lainnya */
+.judul6{
+  position: absolute;
+  top: 695px;
+  left: 980px;
+}
+
+/* flip box-3  */
+.front-G4 {
+  position: absolute;
+  top: 0px;
+  height: 320px;
+  width: 320px;
+  left: 40px;
+}
+.back-G4 {
+  position: absolute;
+  top: 0px;
+  height: 320px;
+  width: 320px;
+  left: 40px;
+}
+.flip-box4{
+  position: relative;
+  top: -16%;
+  left: 850px;
+  width: 300px;
+  height: 200px;
+  perspective: 1000px;
+}
+
+.flip-box-inner4 {
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-box4:hover .flip-box-inner4{
+  transform: rotateY(180deg);
+}
+
+.flip-box-front4,
+.flip-box-back4 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-box-front4 {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-box-back4 {
+  transform: rotateY(180deg);
+}
+
+.texth1{
+  width: 300px;
+  text-align:left;
+  position: relative;
+  top: -250px;
+  left: 100px;
+}
+.textP1{
+  width: 300px;
+  text-align:center;
+  position: relative;
+  top: -500px;
+  left: 500px;
+  font-size: 16px;
+}
+.textL1{
+  width: 300px;
+  text-align:right;
+  position: relative;
+  top: -820px;
+  left: 895px;
+  font-size: 16px;
+}
+
+.pembatas2{
+  position: relative;
+  top: -720px;
+  
+}
 
 
 
