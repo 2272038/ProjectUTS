@@ -1,9 +1,7 @@
 /* Body */
 body {
   margin: 0;
-  background-color: rgb(241, 240, 240);
-  background-image: url(image/by-sebastian\ pizzaro.webp);
-  background-size: 100%;
+  background-color: rgb(148, 148, 148);
 }
 /* headeer */
 .header {
@@ -196,3 +194,174 @@ nav {
 .nav-links ul li:hover::after {
   width: 100%;
 }
+
+.judul1{
+    position: absolute;
+    left: 43%;
+    font-family: 'arial';
+    font-size: 40px
+}
+/* about us J    */
+.a-box1 {
+    position: absolute;
+    margin-top: 100px;
+    left: 300px;
+    display: inline-block;
+    width: 240px;
+    text-align: center;
+  }
+  
+  .img-container1 {
+      height: 230px;
+      width: 200px;
+      overflow: hidden;
+      border-radius: 0px 0px 20px 20px;
+      display: inline-block;
+  }
+  
+  .img-container1 img {
+      transform: skew(0deg, -13deg);
+      height: 250px;
+      width: 200px;
+      margin: -35px 0px 0px -0px;
+  }
+  
+  .inner-skew1 {
+      display: inline-block;
+      border-radius: 20px;
+      overflow: hidden;
+      padding: 0px;
+      transform: skew(0deg, 13deg);
+      font-size: 0px;
+      margin: 30px 0px 0px 0px;
+      background: #c8c2c2;
+      height: 250px;
+      width: 200px;
+  }
+  
+  .text-container1 {
+    height: 150px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
+    padding: 120px 20px 20px 20px;
+    border-radius: 20px;
+    background: #fff;
+    margin: -120px 0px 0px 0px;
+    line-height: 19px;
+    font-size: 14px;
+  }
+  
+  .text-container1 h3 {
+    margin: 20px 0px 10px 0px;
+    color: #04bcff;
+    font-size: 18px;
+  }
+
+  /* about us T   */
+.a-box2 {
+    position: absolute;
+    top: 0px;
+    left: 650px;
+    display: inline-block;
+    width: 240px;
+    text-align: center;
+  }
+  
+  .img-container2 {
+      height: 230px;
+      width: 200px;
+      overflow: hidden;
+      border-radius: 0px 0px 20px 20px;
+      display: inline-block;
+  }
+  
+  .img-container2 img {
+      transform: skew(0deg, -2deg);
+      height: 275px;
+      width: 200px;
+      margin: -35px 0px 0px -0px;
+  }
+  
+  .inner-skew2 {
+      display: inline-block;
+      border-radius: 20px;
+      overflow: hidden;
+      padding: 0px;
+      transform: skew(0deg, -13deg);
+      font-size: 0px;
+      margin: 30px 0px 0px 0px;
+      background: #c8c2c2;
+      height: 250px;
+      width: 200px;
+  }
+  
+  .text-container2 {
+    height: 150px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
+    padding: 120px 20px 20px 20px;
+    border-radius: 20px;
+    background: #fff;
+    margin: -120px 0px 0px 0px;
+    line-height: 19px;
+    font-size: 14px;
+  }
+  
+  .text-container2 h3 {
+    margin: 20px 0px 10px 0px;
+    color: #04bcff;
+    font-size: 18px;
+  }
+  /* hr */
+  .pembatas{
+    position: relative;
+    top: 550px;
+  }
+  /* referensi */
+  .judul2{
+    position: relative;
+    top: 550px;
+    text-align: center;
+    font-size: 30px;
+  }
+  .kotak1{
+    position: relative;
+    top: 550px;
+  }
+  .judul3{
+    margin-left: 20px ;
+  }
+  .kotak2{
+    position: relative;
+    top: 550px;
+  }
+  .judul4{
+    margin-left: 20px ;
+  }
+  .kotak3{
+    position: relative;
+    top: 550px;
+  }
+  .judul5{
+    margin-left: 20px ;
+  }
+  .kotak4{
+    position: relative;
+    top: 550px;
+  }
+  .judul6{
+    margin-left: 20px ;
+  }
+
+  .kotak5{
+    position: relative;
+    top: 550px;
+  }
+  .judul7{
+    margin-left: 20px ;
+  }
+  .kotak6{
+    position: relative;
+    top: 550px;
+  }
+  .judul8{
+    margin-left: 20px ;
+  }
