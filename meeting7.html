@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS</title>
+    <link rel="stylesheet" href="pert7.css" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- header -->
+    <div class="header">
+      <!-- logo -->
+      <img
+        src="image/css logo.png"
+        id="logo"
+        class="logo"
+        height="125px"
+        width="125px"
+      />
+      <!-- title pertemuan  -->
+      <div id="#container">
+        <h1>css dasar</h1>
+        <h1>css dasar</h1>
+        <h1>css dasar</h1>
+      </div>
+      <div class="color-overlay"></div>
+      <!-- ref -->
+      <nav>
+        <div class="nav-links">
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="meeting5.html">BACK </a></li>
+            <li><a href="Reference & AboutUs.html">NEXT</a></li>
+            <li><a href="Reference & AboutUs.html">Reference</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <!-- kotak -->
+    <div class="kotak1">
+      <!-- judul html -->
+      <h2 class="judul" title="Cascade Style Sheets">
+        <b>Cascade Style Sheet</b>
+      </h2>
+      <div class="text1">
+        <p id="isi1">
+          <br />
+          <b>CSS (Cascade Style Sheet)</b> adalah sebuah bahasa untuk mengatur
+          tampilan web sehingga terlihat lebih menarik dan indah, dengan bantuan
+          CSS, kita dapat mengatur layout (tata letak), warna, font, garis,
+          background, animasi, dan lain-lain.
+        </p>
+      </div>
+      <hr class="atas1" size="5px" color="white" />
+      <hr size="525px" width="4px" class="kiri1" color="white" />
+      <hr class="kanan1" size="455px" color="white" width="4px" />
+      <hr class="bawah1" size="5px" color="white" />
+      <hr class="pembatas" size="5px" color="white" width="900px" />
+
+      <h2 class="judul1" title="syntax">
+        <b>Syntax</b>
+      </h2>
+      <div class="isi2">
+        <img
+          src="image/syntax css.jpg"
+          height="100px"
+          width="300px"
+          class="syntax"
+        />
+      </div>
+
+      <ul class="table1">
+        <li>
+          <font color="green">Selektor</font> (selector) merupakan kata kunci
+          untuk menentukan elemen HTML yang akan kita beri gaya (style).
+        </li>
+        <br />
+        <li>
+          <font color="blue">Blok Deklarasi</font> dalam CSS berisi
+          <font color="lightgreen">properti</font> dari
+          <font color="green">Selektor</font> dan
+          <font color="lightgreen">nilai</font> dari
+          <font color="lightgreen">properti</font> tersebut. Deklarasi diawali
+          dan diakhiri dengan kurung kurawal
+          <font color="white"
+            >{<font color="green">.</font><font color="lightgreen">.</font
+            ><font color="orange">.</font>}</font
+          >
+        </li>
+        <br />
+        <li>
+          <font color="lightgreen">Properti</font> merupakan atribut yang akan
+          diterapkan oleh elemen yang dipilih (<font color="green"
+            >Selektor</font
+          >), untuk mendefinisikan
+          <font color="lightgreen">nilai properti</font>, kita perlu menggunakan
+          tanda titik dua (<font color="white">:</font>) setelah penulisan nama
+          <font color="lightgreen">properti</font>.
+        </li>
+        <br />
+        <li>
+          <font color="lightgreen">Nilai</font> merupakan atribut yang akan
+          digunakan setelah kita menuliskan
+          <font color="lightgreen">properti</font>,
+          <font color="lightgreen">nilai</font> ini berfungsi untuk menentukan
+          apa yang akan terjadi.
+        </li>
+      </ul>
+
+      <h2 class="judul2" title="Jenis-jenis CSS">
+        <b>Jenis-jenis CSS</b>
+      </h2>
+
+      <h2 class="judul3" title="Jenis-jenis CSS">
+        <b>Inline style sheet</b>
+      </h2>
+
+      <img src="image/inline.jpg" class="inline" alt="inline" title="inline" />
+
+      <h2 class="judul4" title="internal">
+        <b>Internal style sheet</b>
+      </h2>
+
+      <img
+        src="image/internal.jpg"
+        class="internal"
+        alt="internal"
+        title="internal"
+      />
+
+      <h2 class="judul5" title="Eksternal">
+        <b>Eksternal style sheet</b>
+      </h2>
+
+      <img
+        src="image/external.jpg"
+        class="eksternal"
+        alt="eksternal"
+        title="eksternal"
+      />
+      <ol type="1" class="pembahasan">
+        <li><b>Inline style sheet</b></li>
+        <p class="inline-text">
+          Inline Style Sheet merupakan metode atau cara penulisan CSS langsung
+          pada tag HTML yang ingin diberikan style CSS. Metode ini biasanya
+          digunakan ketika kita tidak ingin mengatur semua elemen didalam
+          dokumen web. Metode ini sangat tidak disarankan karena akan membuat
+          tag pada HTML akan penuh dengan attribute HTML dan membuat ukuran file
+          pada HTML akan bertambah besar. Berikut contoh penggunaan Inline Style
+          Sheet.
+        </p>
+        <br />
+        <li><b>Internal style sheet</b></li>
+        <p class="internal-text">
+          Internal Style Sheet merupakan metode penulisan CSS langsung didalam
+          file HTML tepatnya berada diantara tag head dengan diapit tag style
+          terlebih dahulu sebelum memuali kode CSS. Berikut contoh penggunaan
+          Internal Style Sheet.
+        </p>
+        <br />
+        <li><b>Eksternal style sheet</b></li>
+        <p class="eksternal-text">
+          Eksternal Style Sheet merupakan metode penulisan CSS secara terpisah
+          dengan memberikan ekstensi .css untuk nama filenya. Metode ini sangat
+          dinajurkan untuk menuliskan kode CSS karena kita akan dengan mudah
+          mengubah kode yang terkumpul dalam satu file. Untuk Eksternal style
+          file akan disematkan atau diload dengan kode HTML seperti berikut.
+        </p>
+      </ol>
+      <hr class="pembatas2" size="5px" color="white" />
+    </div>
+  </body>
+</html>

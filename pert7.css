@@ -1,0 +1,339 @@
+/* Body */
+body {
+  margin: 0;
+  background-color: #fff;
+  font-family: "arial";
+}
+/* headeer */
+.header {
+  background: #000 url(image/possible\ bg\ 3.jpg);
+  background-position-y: 1000px;
+  color: #fff;
+  height: 200px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+/* grid hitam pada header */
+.color-overlay {
+  width: 100%;
+  height: 100%;
+  background: grey;
+  opacity: 15%;
+  position: absolute;
+}
+
+#container {
+  width: 70vw;
+  margin: 30vw auto;
+}
+/* tulisan pertemuan 1&2 */
+h1 {
+  font-family: "Silkscreen", cursive;
+  font-size: 45px;
+  z-index: 1;
+  letter-spacing: 8px;
+  margin: 0;
+  line-height: 0;
+}
+h1:nth-child(2) {
+  z-index: 1;
+  color: #67f3da;
+  animation: glitch2 2.5s infinite;
+}
+
+h1:nth-child(3) {
+  z-index: 1;
+  color: #f16f6f;
+  animation: glitch3 2.5s infinite;
+}
+/* keyframes untuk efek glitch */
+@keyframes glitch2 {
+  0% {
+    transform: none;
+    opacity: 0.25;
+  }
+  7% {
+    transform: translate(-2px, -3px);
+    opacity: 0.5;
+  }
+  10% {
+    transform: none;
+    opacity: 0.25;
+  }
+  27% {
+    transform: none;
+    opacity: 0.25;
+  }
+  30% {
+    transform: translate(-5px, -2px);
+    opacity: 0.5;
+  }
+  35% {
+    transform: none;
+    opacity: 0.25;
+  }
+  52% {
+    transform: none;
+    opacity: 0.25;
+  }
+  55% {
+    transform: translate(-5px, -1px);
+    opacity: 0.5;
+  }
+  50% {
+    transform: none;
+    opacity: 0.25;
+  }
+  72% {
+    transform: none;
+    opacity: 0.25;
+  }
+  75% {
+    transform: translate(-2px, -6px);
+    opacity: 0.5;
+  }
+  80% {
+    transform: none;
+    opacity: 0.25;
+  }
+  100% {
+    transform: none;
+    opacity: 0.25;
+  }
+}
+
+@keyframes glitch3 {
+  0% {
+    transform: none;
+    opacity: 0.25;
+  }
+  7% {
+    transform: translate(2px, 3px);
+    opacity: 0.5;
+  }
+  10% {
+    transform: none;
+    opacity: 0.25;
+  }
+  27% {
+    transform: none;
+    opacity: 0.25;
+  }
+  30% {
+    transform: translate(5px, 2px);
+    opacity: 0.5;
+  }
+  35% {
+    transform: none;
+    opacity: 0.25;
+  }
+  52% {
+    transform: none;
+    opacity: 0.25;
+  }
+  55% {
+    transform: translate(5px, 1px);
+    opacity: 0.5;
+  }
+  50% {
+    transform: none;
+    opacity: 0.25;
+  }
+  72% {
+    transform: none;
+    opacity: 0.25;
+  }
+  75% {
+    transform: translate(2px, 6px);
+    opacity: 0.5;
+  }
+  80% {
+    transform: none;
+    opacity: 0.25;
+  }
+  100% {
+    transform: none;
+    opacity: 0.25;
+  }
+}
+/* untuk reference and aboutus  */
+
+nav {
+  font-family: "Silkscreen", cursive;
+  display: flex;
+  position: absolute;
+  top: 0px;
+  right: 1%;
+}
+.nav-links {
+  flex: 1;
+  text-align: right;
+}
+.nav-links ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+}
+.nav-links ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+}
+.nav-links ul li::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: #f44336;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+.nav-links ul li:hover::after {
+  width: 100%;
+}
+
+/* logo */
+#logo {
+  position: absolute;
+  left: 2%;
+  top: 8%;
+  max-width: 150px;
+  height: auto;
+}
+/* kotak */
+.kotak1 {
+  background-color: darkgrey;
+  width: 1300px;
+  height: 2000px;
+  border-radius: 5%;
+  position: relative;
+  top: 25px;
+  left: 7%;
+}
+/* css */
+.judul {
+  position: relative;
+  top: 10px;
+  text-align: center;
+  font-size: 40px;
+}
+/* text1 */
+#isi1 {
+  position: relative;
+  left: 100px;
+  width: 1150px;
+  font-size: 20px;
+}
+/* syntax */
+.judul1 {
+  position: absolute;
+  top: 20px;
+  left: 150px;
+  top: 9%;
+}
+
+/* gambar */
+.syntax {
+  position: absolute;
+  left: 50px;
+  top: 250px;
+  border-radius: 10px;
+}
+/* penjelasan syntax */
+.table1 {
+  width: 370px;
+  height: auto;
+  position: absolute;
+  top: 350px;
+}
+/* batas */
+.kiri1 {
+  position: relative;
+  top: -10px;
+  left: -245px;
+}
+
+.kanan1 {
+  position: relative;
+  top: -475px;
+  right: -220px;
+}
+.bawah1 {
+  position: relative;
+  top: -485px;
+}
+.pembatas {
+  position: absolute;
+  top: 230px;
+  left: 405px;
+}
+/* jenis jenis css */
+.judul2 {
+  position: absolute;
+  top: 175px;
+  right: 350px;
+}
+/* inline */
+.judul3 {
+  position: absolute;
+  top: 235px;
+  right: 575px;
+}
+.inline {
+  position: absolute;
+  top: 300px;
+  left: 440px;
+  width: 390px;
+}
+
+.judul4 {
+  position: absolute;
+  top: 235px;
+  right: 117.5px;
+}
+.internal{
+  position: absolute;
+  top: 300px;
+  right:50px;
+  width: 350px;
+  height: 350px; 
+}
+.judul5 {
+  position: absolute;
+  top: 440px;
+  right: 545px;
+}
+.eksternal{
+  position: absolute;
+  top: 500px;
+  right:462px;
+  width: 400px;
+  height:160px; 
+}
+
+.pembahasan{
+  position: relative;
+  top: -23%;
+  font-size: 20px;
+}
+.eksternal-text{
+text-indent: 5%;
+margin-right: 5px;
+} 
+.internal-text{
+  text-indent: 5%;
+  margin-right: 5px;
+} 
+.inline-text{
+  text-indent: 5%;
+  margin-right: 5px;
+}
+
+.pembatas2{
+  position: relative;
+  top:-22%;
+}
