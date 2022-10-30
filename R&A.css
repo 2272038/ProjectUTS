@@ -1,13 +1,14 @@
 /* Body */
 body {
   margin: 0;
-  background-color: #fff;
-  font-family: "arial";
+  background-color: rgb(241, 240, 240);
+  background-image: url(image/by-sebastian\ pizzaro.webp);
+  background-size: 100%;
 }
 /* headeer */
 .header {
   background: #000 url(image/possible\ bg\ 3.jpg);
-  background-position-y: 1000px;
+  background-position-y: -120px;
   color: #fff;
   height: 200px;
   width: 100%;
@@ -166,7 +167,7 @@ nav {
   display: flex;
   position: absolute;
   top: 0px;
-  right: 1%;
+  left: 1%;
 }
 .nav-links {
   flex: 1;
@@ -194,158 +195,4 @@ nav {
 }
 .nav-links ul li:hover::after {
   width: 100%;
-}
-
-/* logo */
-#logo {
-  position: absolute;
-  left: 2%;
-  top: 8%;
-  max-width: 150px;
-  height: auto;
-}
-/* kotak */
-.kotak1 {
-  background-color: darkgrey;
-  width: 1300px;
-  height: 1400px;
-  border-radius: 100px;
-  position: relative;
-  top: 25px;
-  left: 7%;
-}
-/* css */
-.judul {
-  position: relative;
-  top: 10px;
-  text-align: center;
-  font-size: 40px;
-}
-/* text1 */
-#isi1 {
-  position: relative;
-  left: 100px;
-  width: 1150px;
-  font-size: 20px;
-}
-/* syntax */
-.judul1 {
-  position: absolute;
-  top: 20px;
-  left: 150px;
-  top: 12.5%;
-}
-
-/* gambar */
-.syntax {
-  position: absolute;
-  left: 50px;
-  top: 250px;
-  border-radius: 10px;
-}
-/* penjelasan syntax */
-.table1 {
-  width: 370px;
-  height: auto;
-  position: absolute;
-  top: 350px;
-}
-/* batas */
-.kiri1 {
-  position: relative;
-  top: -10px;
-  left: -245px;
-}
-
-.kanan1 {
-  position: relative;
-  top: -475px;
-  right: -220px;
-}
-.bawah1 {
-  position: relative;
-  top: -485px;
-}
-.pembatas {
-  position: absolute;
-  top: 230px;
-  left: 405px;
-}
-/* jenis jenis css */
-.judul2 {
-  position: absolute;
-  top: 175px;
-  right: 350px;
-}
-/* inline */
-.judul3 {
-  position: absolute;
-  top: 235px;
-  right: 575px;
-}
-.inline {
-  position: absolute;
-  top: 300px;
-  left: 440px;
-  width: 390px;
-}
-/* internal */
-.judul4 {
-  position: absolute;
-  top: 235px;
-  right: 117.5px;
-}
-.internal{
-  position: absolute;
-  top: 300px;
-  right:50px;
-  width: 350px;
-  height: 350px; 
-}
-/* eksternal */
-.judul5 {
-  position: absolute;
-  top: 440px;
-  right: 545px;
-}
-.eksternal{
-  position: absolute;
-  top: 500px;
-  right:462px;
-  width: 400px;
-  height:160px; 
-}
-/* penjelasan bagian bawah menggunakan OL */
-.pembahasan{
-  position: relative;
-  top: -30%;
-  font-size: 20px;
-}
-.eksternal-text{
-text-indent: 5%;
-margin-right: 5px;
-} 
-.internal-text{
-  text-indent: 5%;
-  margin-right: 5px;
-} 
-.inline-text{
-  text-indent: 5%;
-  margin-right: 5px;
-}
-/* pembatas akhir */
-.pembatas2{
-  position: relative;
-  top:-22%;
-}
-.linked{
-  position: absolute;
-  right: 20px;
-  top: 1300px;
-  color: #000;
-  text-decoration: none;
-}
-.linked:hover{
-  color: #fff;
-  text-decoration: underline;
 }
